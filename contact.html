@@ -1,77 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact | John Doe Portfolio</title>
-
-<meta name="description"
-content="Contact John Doe through an accessible contact form.">
-
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <header>
-    <h1>Contact Me</h1>
+<div class="container navbar">
+<h2 class="logo">Portfolio</h2>
 
-    <nav aria-label="Primary Navigation">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" aria-current="page">Contact</a></li>
-        </ul>
-    </nav>
+<ul class="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
 </header>
 
-<main>
+<section>
+<div class="container grid grid-2">
 
-<section aria-labelledby="contact-heading">
+<div class="card">
+<h2>Contact Info</h2>
+<p>Email: test@email.com</p>
+<p>Phone: +91 9876543210</p>
+</div>
 
-<h2 id="contact-heading">Get In Touch</h2>
-
-<form action="#" method="post" aria-label="Contact Form">
-
-<label for="name">Full Name</label>
-<input
-type="text"
-id="name"
-name="name"
-required
-aria-required="true">
-
-<label for="email">Email Address</label>
-<input
-type="email"
-id="email"
-name="email"
-required
-aria-required="true">
-
-<label for="message">Message</label>
-<textarea
-id="message"
-name="message"
-rows="5"
-required
-aria-required="true"></textarea>
-
-<button type="submit">
-Send Message
-</button>
-
+<div class="card">
+<h2>Message</h2>
+<form>
+<input type="text" placeholder="Name"><br><br>
+<input type="email" placeholder="Email"><br><br>
+<textarea rows="5" placeholder="Message"></textarea><br><br>
+<button class="btn">Send</button>
 </form>
+</div>
 
+</div>
 </section>
-
-</main>
-
-<footer>
-    <p>&copy; 2026 John Doe</p>
-</footer>
 
 </body>
 </html>
